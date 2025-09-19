@@ -1,0 +1,62 @@
+# Archivos de sistema
+*.log
+*.jou
+*.str
+*.zip
+*.gz
+*.tmp
+*.swp
+
+# Directorios de salida de Vivado
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.simvision/
+.xil/
+.runs/
+.gen/
+.cache/
+.vivado/
+
+# Checkpoints y snapshots
+*.dcp
+*.wdb
+*.pb
+*.xml
+
+# Archivos de simulación
+*.vcd
+*.saif
+*.fsdb
+*.sdf
+*.ncf
+
+# Archivos de waveforms
+*.wcfg
+*.wdb
+
+# Carpeta de reports
+*.rpt
+*.txt
+
+# Archivos de bases de datos y compilación
+*.db
+*.dbc
+*.ncd
+*.ngc
+*.ngd
+*.ngm
+*.rtd
+*.twr
+*.xwbt
+
+# Vivado Project files (autogenerados)
+*.Xil
+*.xpr.lock
+*.cache
+*.data
+
+# Otros autogenerados
+*.jou
+*.str
