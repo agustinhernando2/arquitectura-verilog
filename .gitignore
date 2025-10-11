@@ -1,62 +1,99 @@
-# Archivos de sistema
-*.log
+# ============================================
+# Vivado Project .gitignore
+# Compatible con Verilog y VHDL
+# ============================================
+
+# Archivos temporales y de configuración automática
 *.jou
+*.log
 *.str
-*.zip
-*.gz
 *.tmp
-*.swp
-
-# Directorios de salida de Vivado
-.cache/
-.hw/
-.ip_user_files/
-.sim/
-.simvision/
-.xil/
-.runs/
-.gen/
-.cache/
-.vivado/
-
-# Checkpoints y snapshots
-*.dcp
-*.wdb
-*.pb
-*.xml
-
-# Archivos de simulación
-*.vcd
-*.saif
-*.fsdb
-*.sdf
-*.ncf
-
-# Archivos de waveforms
+*.backup
+*.bak
 *.wcfg
-*.wdb
+*.dcp
+*.xpr.lock
 
-# Carpeta de reports
-*.rpt
-*.txt
+# Directorios de cache y salida
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.runs/
+*.xpr.lock/
+*.gen/
+*.srcs/sources_1/ip/*
+*.srcs/sources_1/ipshared/*
 
-# Archivos de bases de datos y compilación
-*.db
-*.dbc
+# Archivos generados por síntesis, implementación o simulación
+*.bit
+*.bin
+*.ltx
+*.mmi
+*.prm
+*.sdf
+*.svf
+*.xml
+*.xsa
+*.cfg
 *.ncd
 *.ngc
 *.ngd
-*.ngm
-*.rtd
-*.twr
-*.xwbt
+*.edf
 
-# Vivado Project files (autogenerados)
-*.Xil
-*.xpr.lock
-*.cache
-*.data
+# Archivos de waveform y simulación
+*.wdb
+*.vcd
+*.saif
+*.syr
+*.pb
 
-# Otros autogenerados
-*.jou
-*.str
+# Archivos de bases de datos internas
+*.db
+*.rdb
+*.rds
+*.cache/
+*.init_design/
+*.ip_user_files/
+*.hw_handoff/
+*.ipdefs/
+*.xpr.lock/
+*.sdk/
+
+# Archivos de exportación o integración con SDK/Vitis
+*.sdk/
+*.sdk_log/
+*.xsa
+*.elf
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Archivos de proyecto que pueden regenerarse
+*.Xil/
+*.vivado.*
+
+# ============================================
+# Mantener los archivos fuente
+# ============================================
+
+# No ignores los HDL ni los constraints
+!*.v
+!*.sv
+!*.vh
+!*.vhd
+!*.xdc
+!*.tcl
+
+# ============================================
+# Opcional: si trabajas con múltiples proyectos Vivado
+# ============================================
+# Ignorar proyectos completos generados
+project_*/project_*.cache/
+project_*/project_*.hw/
+project_*/project_*.ip_user_files/
+project_*/project_*.sim/
+project_*/project_*.runs/
