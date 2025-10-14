@@ -44,3 +44,8 @@ Podés hacerlo así:
 3. Reiniciá Vivado y la Basys 3 aparecerá en la lista.
 
 ---
+### Referencias
+
+- [HDLBits — Verilog Practice](https://hdlbits.01xz.net/wiki/Main_Page)
+
+- [Basys 3 AMD Artix™ 7 FPGA Trainer Board: Recommended for Introductory Users](https://digilent.com/shop/basys-3-amd-artix-7-fpga-trainer-board-recommended-for-introductory-users/)
